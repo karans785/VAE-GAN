@@ -1,0 +1,22 @@
+<%include partials/header.ejs%>
+<div class="jumbotron" style='padding:50px 50px;'>
+    <h1 class="display-4" style= 'font-weight: bold','color:blue'>VAE-GAN</h1>
+    <p class="lead">Variational AutoEncoder Generative Adverserial Network </p>
+    <hr class="my-4">
+    <p>Combining the power of an AutoEncoder and a GAN</p>
+    <a class="btn btn-primary btn-lg" href="https://towardsdatascience.com/what-the-heck-are-vae-gans-17b86023588a" role="button">Never stop learning!</a>
+</div>
+<form action="/result" method="POST" style='margin:70px 200px; align-content: center;border-radius:25px;border:2px solid #c6dcff;padding:50px 50px ' >
+    <div style='margin: 10px 10px;font-size: 150%;'>Just fill in the details below so that we can start the training! </div>
+    <div class="form-group">
+      <label for="item1">Epochs</label>
+      <input type="number" class="form-control" id="item1"  placeholder="0-9" name = "epochs">
+    </div>
+    <div class="form-group">
+      <label for="item2">Digit</label>
+      <input type="number" class="form-control" id="item2" placeholder="0-9" name = "digit">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<%include partials/footer.ejs%>

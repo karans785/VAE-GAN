@@ -1,0 +1,15 @@
+*{
+    margin: 10px 10px;
+}
+
+#id1{
+    margin:100 px 100 px;
+    margin : 50px 100px;
+    align-content: center;
+}
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+  
+.the-icons {
+  font-size: 25px;
+}
